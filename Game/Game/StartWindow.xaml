@@ -1,0 +1,17 @@
+﻿<Window x:Class="Game.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="300" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="MSHP" Margin="67,11,59,194" FontSize="48" FontFamily="AdverGothic"/>
+        <Label Content="The Game" Height="32" Margin="114,67,102,0" VerticalAlignment="Top"/>
+        <Label Content="Best score" Margin="91,131,80,0" VerticalAlignment="Top" FontSize="20" FontFamily="SimSun" Height="44"/>
+        <Label x:Name="bestscore" Content="0" Margin="85,155,85,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="39"/>
+        <Button x:Name="Start" Content="Start" Margin="94,213,94,0" VerticalAlignment="Top" RenderTransformOrigin="0.276,0.617" Click="Start_Click" Height="37"/>
+
+    </Grid>
+</Window>

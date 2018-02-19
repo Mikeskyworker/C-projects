@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="405.5" Width="519" KeyDown="Window_KeyDown" ResizeMode="NoResize">
+        Title="MSHP - The Game" Height="405.5" Width="519" KeyDown="Window_KeyDown" ResizeMode="NoResize">
     <Grid>
         <Canvas HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="511" Margin="0,56,0,0">
             <Image x:Name="player" Height="50" Canvas.Left="30" Canvas.Top="138" Width="50" Source="images/general.jpg"/>
@@ -14,6 +14,9 @@
         <Rectangle HorizontalAlignment="Left" Height="56" Stroke="Black" VerticalAlignment="Top" Width="511" Fill="Black"/>
         <Label Content="Очки:" HorizontalAlignment="Left" Margin="4,7,0,0" VerticalAlignment="Top" Width="72" Foreground="White" FontSize="24"/>
         <Label x:Name="score" Content="0" HorizontalAlignment="Left" Margin="76,9,0,0" VerticalAlignment="Top" Width="168" Foreground="White" FontSize="24"/>
+        <Image x:Name="mute_img" HorizontalAlignment="Left" Height="36" Margin="475,0,0,0" VerticalAlignment="Top" Width="36" Source="images/mute.png"/>
+        <Button x:Name="mute" Content="" HorizontalAlignment="Left" Margin="475,0,0,0" VerticalAlignment="Top" Width="36" Height="36" Opacity="0" Click="mute_Click"/>
+        
 
     </Grid>
 </Window>
