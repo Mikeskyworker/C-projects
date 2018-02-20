@@ -163,8 +163,8 @@ namespace Game
             double y = Canvas.GetTop(player);
             if (e.Key == Key.Up) //Если прожата UP
             {
-                if (y - 10 > -4) { }  else {y = -4; return; }
-                y-=10;
+                if (y - 10 > -4) { } else { y = -4; return; }
+                y -= 10;
 
             }
             if (e.Key == Key.Down)
@@ -173,9 +173,19 @@ namespace Game
                 y += 10;
 
             }
+            if (e.Key == Key.M)
+            {
+                if (ismuted == false) { audio(false); ismuted = true; }
+                else
+                {
+                    audio(true);
+                    ismuted = false;
+                }
+            }
 
-            //Canvas.SetLeft(player, x);
-            Canvas.SetTop(player, y);
+                //Canvas.SetLeft(player, x);
+                Canvas.SetTop(player, y);
+            
         }
 
         private void mute_Click(object sender, RoutedEventArgs e)
@@ -183,13 +193,13 @@ namespace Game
             if (ismuted == false)
             {
                 audio(false); ismuted = true;
-                //mute_img.Source = new Uri("Pictures/muted.png", UriKind.Relative);
+                //mute_img.Source = new BitmapImage(new Uri(@"Pictures/muted.png"));
             }
             else
             {
                 audio(true);
                 ismuted = false;
-               // mute_img.Source = @"Pictures/unmuted.png";
+                //mute_img.Source = new BitmapImage(new Uri(@"Pictures/unmuted.png"));
             }
         }
     }

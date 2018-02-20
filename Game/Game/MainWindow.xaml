@@ -11,11 +11,11 @@
             <Image x:Name="player" Height="50" Canvas.Left="30" Canvas.Top="138" Width="50" Source="images/general.jpg"/>
             <Image x:Name="enemy" Height="75" Canvas.Left="600" Canvas.Top="30" Width="75" Source="images/enemy.jpg"/>
         </Canvas>
-        <Rectangle HorizontalAlignment="Left" Height="56" Stroke="Black" VerticalAlignment="Top" Width="511" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="56" Stroke="Black" VerticalAlignment="Top" Width="513" Fill="Black"/>
         <Label Content="Очки:" HorizontalAlignment="Left" Margin="4,7,0,0" VerticalAlignment="Top" Width="72" Foreground="White" FontSize="24"/>
         <Label x:Name="score" Content="0" HorizontalAlignment="Left" Margin="76,9,0,0" VerticalAlignment="Top" Width="168" Foreground="White" FontSize="24"/>
-        <Image x:Name="mute_img" HorizontalAlignment="Left" Height="36" Margin="475,0,0,0" VerticalAlignment="Top" Width="36" Source="images/mute.png"/>
-        <Button x:Name="mute" Content="" HorizontalAlignment="Left" Margin="475,0,0,0" VerticalAlignment="Top" Width="36" Height="36" Opacity="0" Click="mute_Click"/>
+        <Image x:Name="mute_img" HorizontalAlignment="Left" Height="36" Margin="467,0,0,0" VerticalAlignment="Top" Width="36" Source="images/mute.png"/>
+        <Button x:Name="mute" Content="" HorizontalAlignment="Left" Margin="467,0,0,0" VerticalAlignment="Top" Width="36" Height="36" Opacity="0" Click="mute_Click"/>
         
 
     </Grid>
