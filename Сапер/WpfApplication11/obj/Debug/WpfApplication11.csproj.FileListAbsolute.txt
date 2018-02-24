@@ -1,0 +1,60 @@
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\bin\Debug\WpfApplication11.exe.config
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\WpfApplication11.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\MainWindow.g.cs
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\App.g.cs
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\WpfApplication11_MarkupCompile.cache
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\WpfApplication11_MarkupCompile.lref
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\bin\Debug\WpfApplication11.exe
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\bin\Debug\WpfApplication11.pdb
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\MainWindow.baml
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\WpfApplication11.g.resources
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\WpfApplication11.Properties.Resources.resources
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\WpfApplication11.csproj.GenerateResource.Cache
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\WpfApplication11.exe
+\\mac\home\documents\visual studio 2015\Projects\WpfApplication11\WpfApplication11\obj\Debug\WpfApplication11.pdb
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\bin\Debug\WpfApplication11.exe.config
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\bin\Debug\WpfApplication11.exe
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\bin\Debug\WpfApplication11.pdb
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11.csprojResolveAssemblyReference.cache
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\MainWindow.g.cs
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\Window1.g.cs
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\App.g.cs
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11_MarkupCompile.cache
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11_MarkupCompile.lref
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\MainWindow.baml
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\Window1.baml
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11.g.resources
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11.Properties.Resources.resources
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11.csproj.GenerateResource.Cache
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11.csproj.CoreCompileInputs.cache
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11.exe
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11.pdb
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\Shop.g.cs
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\Shop.baml
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\Inventory.g.cs
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\Inventory.baml
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11_Content.g.cs
+C:\Users\icYFTL\Desktop\Сапер\WpfApplication11\obj\Debug\WpfApplication11.AboutBox1.resources
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\bin\Debug\WpfApplication11.exe.config
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\bin\Debug\WpfApplication11.exe
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\bin\Debug\WpfApplication11.pdb
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11.csprojResolveAssemblyReference.cache
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\Inventory.g.cs
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\MainWindow.g.cs
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\Shop.g.cs
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\Window1.g.cs
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\App.g.cs
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11_Content.g.cs
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11_MarkupCompile.cache
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11_MarkupCompile.lref
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\Inventory.baml
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\MainWindow.baml
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\Shop.baml
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\Window1.baml
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11.g.resources
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11.AboutBox1.resources
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11.Properties.Resources.resources
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11.csproj.GenerateResource.Cache
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11.csproj.CoreCompileInputs.cache
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11.exe
+C:\Users\icYFTL\Google Диск\Сапер\WpfApplication11\obj\Debug\WpfApplication11.pdb
