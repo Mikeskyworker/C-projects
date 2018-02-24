@@ -70,7 +70,6 @@ namespace Game
             else sp.Stop();
         }
         private DispatcherTimer timer = null;
-        private int x;
         int speed = 20;
         int scoreCount = 0;
         public void timerStart()
@@ -83,7 +82,9 @@ namespace Game
 
         private void timerTick(object sender, EventArgs e) //Тут код выполняется циклично с интервалом speed (ms)
         {
-            score.Content = scoreCount.ToString();
+            
+            
+            
             double x = Canvas.GetLeft(enemy);//Вычисление x от enemy
             double y = Canvas.GetTop(enemy);//Вычесление y от enemy
             x -= 5; //Единичный шаг enemy
@@ -97,8 +98,7 @@ namespace Game
                 timer.Interval = new TimeSpan(0, 0, 0, 0, speed);//Установка скорости
                 enemy.Height = randomn(50, 200); enemy.Width = randomn(50, 200); //Рандомная генерация размера enemy
                 scoreCount++;
-
-
+                score.Content = scoreCount.ToString();
             }
 
             check();//Проверка на столкновение
@@ -118,8 +118,11 @@ namespace Game
             double enemyy = Canvas.GetTop(enemy);
             double playerx = Canvas.GetLeft(player);
             double playery = Canvas.GetTop(player);
-            if (enemyx == playerx+50)
+            //double SEnemy = enemy.Height * enemy.Width;
+            double HPlayer = player.Height;
+            if (enemyx == playerx+HPlayer)
             {
+                
                 for (int i = 0; i < 50; i++) { if (enemyy == playery || enemyy - i == playery) {
                         MessageBox.Show("You lose!");
                         audio(false);
@@ -150,8 +153,15 @@ namespace Game
 
         public int randomn (int a, int b)
         {
-            Random r = new Random();
-            return r.Next(a,b);
+            int[] size = new int[5];
+            Random h = new Random();
+            Random h1 = new Random();
+            int j = h1.Next(0,5);
+            for (int i = 0; i < 5; ++i)
+            {
+                size[i] = h.Next(a, b);
+            }
+            return size[j];
 
 
         }

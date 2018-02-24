@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
-        Title="StartWindow" Height="300" Width="300" ResizeMode="NoResize">
+        Title="StartWindow" Height="300" Width="300" ResizeMode="NoResize" Opacity="0">
     <Grid>
         <Label Content="MSHP" Margin="67,11,59,194" FontSize="48" FontFamily="AdverGothic"/>
         <Label Content="The Game" Height="32" Margin="114,67,102,0" VerticalAlignment="Top"/>

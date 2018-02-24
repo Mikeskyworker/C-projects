@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 
 namespace Game
@@ -20,12 +21,13 @@ namespace Game
     /// </summary>
     public partial class StartWindow : Window
     {
+        private DispatcherTimer timer = null;
         public StartWindow()
         {
             InitializeComponent();
             scoreUpdater();
         }
-        
+        int x = 0;
 
         public void scoreUpdater ()
         {
