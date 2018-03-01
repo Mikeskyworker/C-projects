@@ -1,0 +1,16 @@
+C:\Users\icYFTL\source\repos\BigGame\BigGame\bin\Debug\BigGame.exe.config
+C:\Users\icYFTL\source\repos\BigGame\BigGame\bin\Debug\BigGame.exe
+C:\Users\icYFTL\source\repos\BigGame\BigGame\bin\Debug\BigGame.pdb
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame.csprojResolveAssemblyReference.cache
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\MainWindow.g.cs
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\App.g.cs
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame_MarkupCompile.cache
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame_MarkupCompile.lref
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\MainWindow.baml
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame.g.resources
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame.Properties.Resources.resources
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame.csproj.GenerateResource.Cache
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame.csproj.CoreCompileInputs.cache
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame.exe
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame.pdb
+C:\Users\icYFTL\source\repos\BigGame\BigGame\obj\Debug\BigGame.csproj.ResolveComReference.cache

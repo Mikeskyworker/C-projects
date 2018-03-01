@@ -1,0 +1,16 @@
+﻿<Window x:Class="BigGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BigGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1366" WindowState="Maximized" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" WindowStyle="None" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Canvas x:Name="canvas">
+        <Button x:Name="next" Content="" Width="1366" Height="768" Opacity="0" Visibility="Hidden" IsEnabled="False" Click="next_Click"/>
+        <Label x:Name="startlabel" Content="MSHP The Game" Canvas.Left="411" Canvas.Top="186" Height="131" Width="560" FontSize="72" Opacity="0"/>
+        <Button x:Name="exit" Content="Выход" Canvas.Left="10" Canvas.Top="724" Width="167" Height="34" Click="exit_Click"/>
+        <Label x:Name="continuelab" Content="Click to continue" Canvas.Left="-288" Canvas.Top="585" FontSize="24" FontFamily="Showcard Gothic"/>
+
+    </Canvas>
+</Window>
