@@ -37,27 +37,12 @@ namespace WpfApplication11
         int[,] array; // Объявление ссылки на двумерный массив
         Random r = new Random();
         int open = 0;
-        public void checking ()
-        {
-            try
-            {
-                D.Points = Convert.ToInt32(System.IO.File.ReadAllText(@"Money.ini"));
-            }
-            catch (Exception ex) { MessageBox.Show("ПАЛУНДРА!В БАНКЕ ЧТО ТО СТРАШНОЕ!"); D.Points = 0; System.IO.File.WriteAllText(@"Money.ini", D.Points.ToString()); }
-            if (D.Points < 0) { MessageBox.Show("ПАЛУНДРА! ОТРИЦАТЕЛЬНОЕ В БАНКЕ");
-                D.Points = 0;
-                System.IO.File.WriteAllText(@"Money.ini", D.Points.ToString());
-            }
-
-
-        }
         public MainWindow()
         {
 
 
             if (D.DATE == false)
             {
-                checking();
                 I.count = 0;
                 Window1 w1 = new Window1();
                 this.Hide();
@@ -352,5 +337,10 @@ namespace WpfApplication11
             win();
     }
 
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            //Application.Current.Shutdown();
+        }
     }
 }

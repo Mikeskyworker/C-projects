@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Настройки" Height="430" Width="423" ResizeMode="NoResize" Closed="Window_Closed">
     <Grid x:Name="Grid" Margin="0,0,4,-1">
-        <TextBox x:Name="insert" Height="23" Margin="175,193,85,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" PreviewTextInput="insert_PreviewTextInput" SpellCheck.IsEnabled="True"/>
+        <TextBox x:Name="insert" Height="23" Margin="175,193,85,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" PreviewTextInput="insert_PreviewTextInput" SpellCheck.IsEnabled="True" MaxLength="2"/>
         <Button x:Name="button" Content="Старт" Height="24" Margin="161,228,160,0" VerticalAlignment="Top" Click="button_Click_1"/>
         <Image Height="128" Margin="141,25,141,0" VerticalAlignment="Top" Source="images/Icon.png"/>
         <Label Content="Размер поля:" HorizontalAlignment="Left" Margin="85,189,0,0" VerticalAlignment="Top"/>

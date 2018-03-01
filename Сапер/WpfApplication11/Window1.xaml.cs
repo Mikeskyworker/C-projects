@@ -22,26 +22,52 @@ namespace WpfApplication11
     public partial class Window1 : Window
     {
        
-        private MediaPlayer _mpBgr;
-        private MediaPlayer _mpCurSound;
+        private MediaElement _mpBgr;
+        private MediaElement _mpCurSound;
+        public void fileCheck ()
+        {
+            try
+            {
+                I.count = Convert.ToInt32(System.IO.File.ReadAllText(@"WriteText.ini"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ПАЛУНДРА! ПРОБЛЕМА С ФАЙЛАМИ ИГРЫ. Уже исправляем.", "ААААААААААА");
+                System.IO.File.WriteAllText(@"WriteText.ini", "0");
+                I.count = Convert.ToInt32(System.IO.File.ReadAllText(@"WriteText.ini"));
+            }
+            try
+            {
+                if (System.IO.File.ReadAllText(@"Adwertisment.ini") == "True" || System.IO.File.ReadAllText(@"Adwertisment.ini") == "False") { } else System.IO.File.WriteAllText(@"Adwertisment.ini", "False");
+            } catch (Exception ex) { System.IO.File.WriteAllText(@"Adwertisment.ini", "False"); }
+            try
+            {
+                D.Points = Convert.ToInt32(System.IO.File.ReadAllText(@"Money.ini"));
+            }
+            catch (Exception ex) { MessageBox.Show("ПАЛУНДРА!В БАНКЕ ЧТО ТО СТРАШНОЕ!"); D.Points = 0; System.IO.File.WriteAllText(@"Money.ini", D.Points.ToString()); }
+            if (D.Points < 0)
+            {
+                MessageBox.Show("ПАЛУНДРА! ОТРИЦАТЕЛЬНОЕ В БАНКЕ");
+                D.Points = 0;
+                System.IO.File.WriteAllText(@"Money.ini", D.Points.ToString());
+            }
+            try
+            {
+                for (int i = 33; i < 96; ++i) { if (System.IO.File.ReadAllText(@"Rewards.ini").Contains((char)i)) { System.IO.File.WriteAllText(@"Rewards.ini", ""); break; } }
+                for (int i = 123; i < 255; ++i) { if (System.IO.File.ReadAllText(@"Rewards.ini").Contains((char)i)) { System.IO.File.WriteAllText(@"Rewards.ini", ""); break; } }
+            }
+            catch (Exception ex) { System.IO.File.WriteAllText(@"Rewards.ini", ""); }
+        }
         
         public Window1()
         {
             D.current = "BombTypes/1bomb.png";
             InitializeComponent();
-           
+            fileCheck();
             advert();
             point.Content = "КриптоШишек: ";
             point.Content += D.Points.ToString();
-            try
-            {
-                I.count = Convert.ToInt32(read());
-            }
-            catch (Exception ex) {
-                MessageBox.Show("ПАЛУНДРА! ПРОБЛЕМА С ФАЙЛАМИ ИГРЫ. Уже исправляем.","ААААААААААА");
-                System.IO.File.WriteAllText(@"WriteText.ini", "0");
-                I.count = Convert.ToInt32(read());
-            }
+            
         }
 
         public void advert ()
@@ -49,15 +75,16 @@ namespace WpfApplication11
             if (System.IO.File.ReadAllText(@"Adwertisment.ini") == "True")
             {
                 add.Visibility = Visibility.Hidden;
-                this.Height -= 60;
+                this.Height -= 70;
 
             } else
             {
                 if (D.playing == false)
                 {
-                    _mpBgr = new MediaPlayer();
-                    _mpCurSound = new MediaPlayer();
-                    _mpBgr.Open(new Uri(@"azino.wav", UriKind.RelativeOrAbsolute));
+                    _mpBgr = new MediaElement();
+                    _mpBgr.LoadedBehavior = MediaState.Manual;
+                    _mpCurSound = new MediaElement();
+                    _mpBgr.Source = new Uri(@"azino.mp3", UriKind.RelativeOrAbsolute);
                     _mpBgr.Play();
                     D.playing = true;
                 }
@@ -68,34 +95,26 @@ namespace WpfApplication11
 
     }
 
-        public bool combo (string a)
+        public bool combo(string a)
         {
+            string allow;
+            try
+            {
+                allow = System.IO.File.ReadAllText(@"Rewards.ini").ToString();
+            }
+            catch (Exception ex) { System.IO.File.WriteAllText(@"Rewards.ini", ""); return false; }
 
-            string allow = System.IO.File.ReadAllText(@"Rewards.ini").ToString();
-            
 
-                switch (allow.Contains(a))
-                {
-                    case true :
-                        return true;
+            switch (allow.Contains(a))
+            {
+                case true:
+                    return true;
 
-                }
-            
+            }
+
             return false;
 
 
-
-
-
-        }
-        public string read()
-        {
-            try
-            {
-                return System.IO.File.ReadAllText(@"WriteText.ini");
-
-            }
-            catch (Exception ex) { MessageBox.Show("An error occurated.", "Error"); return "0"; }
 
 
 
@@ -105,7 +124,7 @@ namespace WpfApplication11
         {
 
 
-
+           
             ComboBox comboBox = (ComboBox)sender;
             ComboBoxItem selectedItem = (ComboBoxItem)comboBox.SelectedItem;
 
@@ -272,6 +291,7 @@ namespace WpfApplication11
                         MessageBox.Show("Вы еще не открыли данный вид бомб.", "Внимание!");
                     }
                     break;
+                
 
 
 
@@ -302,11 +322,12 @@ namespace WpfApplication11
                 ||
                 insert.ToString().Contains("0") == true
 
-                ) { } else { MessageBox.Show("Введены запрещенные символы!"); insert.Text = ""; return; }
+                ) { } else { MessageBox.Show("Введены запрещенные символы!"); insert.Text = "5"; return; }
+            try { int temp = Convert.ToInt32(insert.Text.ToString()); } catch (Exception ex) { MessageBox.Show("Вы что, знаете больше 30 чисел? Это слишком много!", "Need Degradation!"); insert.Text = "5"; return; }
             if (Convert.ToInt32(insert.Text.ToString()) > 20 ||  Convert.ToInt32(insert.Text.ToString()) < 4)
             {
                 MessageBox.Show("Неверное значение. Попробуйте еще раз", "Внимание!");
-                insert.Text = "";
+                insert.Text = "5";
                 return;
             }
             this.Hide();
@@ -323,6 +344,7 @@ namespace WpfApplication11
         private void insert_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = "0123456789".IndexOf(e.Text) < 0;
+            
         }
 
         private void Shop_Click(object sender, RoutedEventArgs e)
@@ -345,9 +367,10 @@ namespace WpfApplication11
             ab1.Show();
         }
 
+
         private void Window_Closed(object sender, EventArgs e)
         {
-            System.Environment.Exit(0);
+            //Application.Current.Shutdown();
         }
     }
 }
